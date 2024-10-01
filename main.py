@@ -1,6 +1,6 @@
 import sys
 
-from functions import my_max, my_min
+from functions import my_max, my_min, my_sum
 from problem import Problem
 from util import check_argument
 
@@ -11,6 +11,7 @@ def main():
     problem = Problem()
     problem.register("1", my_max)
     problem.register("2", my_min)
+    problem.register("3", my_sum)
 
     args = sys.argv[1:]
     check_argument(PROG_NAME, args, problem)
