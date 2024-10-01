@@ -19,8 +19,8 @@ class Problem:
         routine = self.__routine[routine_name]
         if not routine:
             print(f"No command: {routine_name}")
-            exit(1)
+            exit(0)
         if not data or len(data) == 0:
             print("Invalid input")
-            exit(2)
+            exit(0)
         routine(data)
