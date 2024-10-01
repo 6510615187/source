@@ -14,3 +14,10 @@ def my_min(data: list) -> None:
             current_min = item
     print(f"Data: {data}")
     print(f"Minimum: {current_min}")
+
+def my_sum(data: list) -> None:
+    total = 0
+    for item in data:
+        total += item
+    print(f"Data: {data}")
+    print(f"Sum: {total}")
